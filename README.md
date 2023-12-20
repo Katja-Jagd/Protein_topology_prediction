@@ -14,7 +14,7 @@ rep = esm.inverse_folding.util.get_encoder_output(model, alphabet, coords)
 ## Data
 The data needed to run this program is stored in 5 files/folders
 
-  1) A csv file containing all protein ID's, there target values, lengths and information about which proteins belong to each fold for cross validation. 
+  1) A csv file containing all protein ID's, their target values, lengths and information about which proteins belong to each fold for cross validation. 
   2) A numpy file just containing the protein ID's 
   3) A file containing the predictions of the SOTA model DeepTMHMM 
   4) A folder containing the 5 trained models from the 5-fold cross validation 
