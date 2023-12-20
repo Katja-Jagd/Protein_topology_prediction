@@ -39,5 +39,6 @@ Five models from the 5-fold cross-validation setup
 - model.4.pt
 - model.5.pt
 
-###  
+### Use models to predict topology 
+Follow instructions in the [scripts/Test.ipynb]() notebook 
 
