@@ -31,7 +31,7 @@ usage: python main.py [--epochs N] [--lr LR] [-b N] [--mode {train}]
 ```
 python main.py --epochs 100 --lr 0.0001 -b 30 --mode train
 ```
-### Output files
+## Output files
 Five models from the 5-fold cross-validation setup
 - model.1.pt
 - model.2.pt
@@ -39,6 +39,12 @@ Five models from the 5-fold cross-validation setup
 - model.4.pt
 - model.5.pt
 
-### Use models to predict topology 
-Follow instructions in the [scripts/Test.ipynb]() notebook 
+## Training curves
+This program integrated the tool [Weights and Biases](https://wandb.ai/site) to track the training progress (Loss and accuracy). An account is needed to track the training curves. 
+
+## Use models to predict topology 
+Follow instructions in the [scripts/Test.ipynb](https://github.com/Katja-Jagd/Protein_topology_prediction/blob/main/scripts/Test.ipynb) notebook 
+
+## Project workflow
+
 
