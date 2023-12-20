@@ -17,8 +17,16 @@ git clone https://github.com/Katja-Jagd/Protein_topology_prediction
 ```
 ## Train model
 ```python
-usage: python main.py [-h] [-i INPUTS] [--epochs N] [--lr LR] [-b N] [--mode {train,test}]
+usage: python main.py [-i INPUTS] [--epochs N] [--lr LR] [-b N] [--mode {train}]
 ```
+### Optional arguments
 
+```python
+-i INPUTS, --inputs INPUTS      
+--epochs N                     Number of total epochs to run
+--lr LR, --learning-rate LR    Learning rate
+-b N, --batch-size N           Batch size
+--mode {train,test}            Only train developed so far
+```
 
 
