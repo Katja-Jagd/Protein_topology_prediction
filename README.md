@@ -4,7 +4,7 @@ This project investigated whether you can predict protein topology from 3D struc
 
 The 3D structures (.pdb files) were used as input for for a pre-trained graph neural nerwork, [ESM-IF1](https://github.com/facebookresearch/esm#invf) described as <code>GVPTransformer</code> in [Learning inverse folding from millions of predicted structures. (Hsu et al. 2022)](https://www.biorxiv.org/content/10.1101/2022.04.10.487779v2). This was done to obtain feature vectors capturing the geometric information of the input data. To obtain feature vectors for all proteins of the dataset instructions described in section [Encoder output as structure representation](https://github.com/facebookresearch/esm/tree/main/examples/inverse_folding) was followed. The necessary functions needed to obtain the feature vectors is shown in the cell below.  
 
-```python
+```
 model, alphabet = esm.pretrained.esm_if1_gvp4_t16_142M_UR50()
 structure = esm.inverse_folding.util.load_structure(fpath, chain_id)
 coords, seq = esm.inverse_folding.util.extract_coords_from_structure(structure)
