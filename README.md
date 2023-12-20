@@ -60,4 +60,4 @@ This program integrated the tool [Weights and Biases](https://wandb.ai/site) to 
 Follow instructions in the [scripts/Test.ipynb](https://github.com/Katja-Jagd/Protein_topology_prediction/blob/main/scripts/Test.ipynb) notebook 
 
 ## Project workflow
-<img src="https://github.com/Katja-Jagd/Protein_topology_prediction/blob/main/WorkFlow.png" width="500" height="500">
+<img src="https://github.com/Katja-Jagd/Protein_topology_prediction/blob/main/work_flow.png" width="500" height="500">
