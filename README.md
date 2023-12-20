@@ -10,6 +10,20 @@ structure = esm.inverse_folding.util.load_structure(fpath, chain_id)
 coords, seq = esm.inverse_folding.util.extract_coords_from_structure(structure)
 rep = esm.inverse_folding.util.get_encoder_output(model, alphabet, coords)
 ```
+
+## Data
+The data needed to run the program is stored in 5 files/folders
+
+  1) A csv file containing all protein ID's, there target values, lengths and information about which proteins belong to each fold for cross validation. 
+  2) A numpy file just containing the protein ID's 
+  3) A file containing the predictions of the SOTA model DeepTMHMM 
+  4) A folder containing the 5 trained models from the 5-fold cross validation 
+  5) A folder containing 3544 protein encodings as .pt file (NB, 3.35 GB) 
+
+The first 3 mentioned files can be found under the folder 'data' in this repository, and the folder containing the models is called 'models'. 
+
+The last folder containing the 3544 protein encodings can be downloaded from https://www.dropbox.com/scl/fo/fldja9rwecmcbgutn13nm/h?rlkey=m1mvj346eq7pgezr5fpxb7818&dl=0 
+
 ## Installation
 Download this repository 
 ```
@@ -40,11 +54,10 @@ Five models from the 5-fold cross-validation setup
 - model.5.pt
 
 ## Training curves
-This program integrated the tool [Weights and Biases](https://wandb.ai/site) to track the training progress (Loss and accuracy). An account is needed to track the training curves. 
+This program integrated the tool [Weights and Biases](https://wandb.ai/site) to track the training progress (loss and accuracy). An account is needed. 
 
 ## Use models to predict topology 
 Follow instructions in the [scripts/Test.ipynb](https://github.com/Katja-Jagd/Protein_topology_prediction/blob/main/scripts/Test.ipynb) notebook 
 
 ## Project workflow
-
-
+<img src="https://github.com/Katja-Jagd/Protein_topology_prediction/blob/main/WorkFlow.png" width="500" height="500">
