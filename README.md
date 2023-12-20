@@ -12,21 +12,32 @@ rep = esm.inverse_folding.util.get_encoder_output(model, alphabet, coords)
 ```
 ## Installation
 Download this repository 
-```python
+```
 git clone https://github.com/Katja-Jagd/Protein_topology_prediction
 ```
 ## Train model
-```python
-usage: python main.py [-i INPUTS] [--epochs N] [--lr LR] [-b N] [--mode {train}]
+```
+usage: python main.py [--epochs N] [--lr LR] [-b N] [--mode {train}]
 ```
 ### Optional arguments
 
-```python
--i INPUTS, --inputs INPUTS      
+```
 --epochs N                     Number of total epochs to run
 --lr LR, --learning-rate LR    Learning rate
 -b N, --batch-size N           Batch size
 --mode {train,test}            Only train developed so far
 ```
+### Example
+```
+python main.py --epochs 100 --lr 0.0001 -b 30 --mode train
+```
+### Output files
+Five models from the 5-fold cross-validation setup
+- model.1.pt
+- model.2.pt
+- model.3.pt
+- model.4.pt
+- model.5.pt
 
+###  
 
